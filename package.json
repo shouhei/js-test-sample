@@ -1,0 +1,31 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha spec/client/**-spec.js --require intelli-espower-loader",
+    "cov": "./node_modules/.bin/isparta cover --report text ./node_modules/mocha/bin/_mocha -- --reporter dot --timeout 10000 --recursive spec/client/**/*-spec.js"
+  },
+  "dependencies": {
+    "babel-cli": "^6.8.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babelify": "^7.2.0",
+    "browserify": "^13.0.0",
+    "gulp": "^3.9.0",
+    "intelli-espower-loader": "^1.0.1",
+    "material-ui": "^0.14.4",
+    "mocha": "^2.4.5",
+    "power-assert": "^1.4.1",
+    "react": "^0.14.7",
+    "superagent": "^1.7.1",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "isparta": "^4.0.0",
+    "mocha": "^2.4.5"
+  }
+}
